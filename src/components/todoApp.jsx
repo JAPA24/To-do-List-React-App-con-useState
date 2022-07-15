@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Todo from "./todo";
 
+import './todoApp.css';
 
 export default function TodoApp(){
 

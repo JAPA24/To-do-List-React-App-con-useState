@@ -33,8 +33,10 @@ function FormEdit(){
 
 function TodoElement(){
     return(
-        <div className="todoInfo">{item.title} <button onClick= {()=> setIsEdit(true)} >Edit</button>
-        <button onClick={(e) => onDelete(item.id)}>Delete</button>
+        <div className="todoInfo">
+        <span className="todoTitle">{item.title} </span>
+        <button className="button" onClick= {()=> setIsEdit(true)} >Edit</button>
+        <button className="buttonDelete" onClick={(e) => onDelete(item.id)}>Delete</button>
         </div>
     );
 }
